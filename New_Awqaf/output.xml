@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.9.4 on win32)" generated="20210527 17:03:48.022" rpa="false">
+<suite id="s1" name="New Awqaf" source="C:\Users\HAzmy\eclipse-workspace\New_Awqaf">
+<suite id="s1-s1" name="TCs" source="C:\Users\HAzmy\eclipse-workspace\New_Awqaf\TCs">
+<suite id="s1-s1-s1" name="WaqfComplaint" source="C:\Users\HAzmy\eclipse-workspace\New_Awqaf\TCs\WaqfComplaint.robot">
+<kw name="Navigate_To_Browser" library="CommonKeys" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210527 17:03:48.330" level="INFO">Opening browser 'Chrome' to base url 'http://awqaf2.staging.t2.sa/ar'.</msg>
+<status status="PASS" starttime="20210527 17:03:48.329" endtime="20210527 17:03:52.533"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210527 17:03:52.533" endtime="20210527 17:03:52.732"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${HomePage_Login_Link}</arg>
+</arguments>
+<msg timestamp="20210527 17:03:52.733" level="INFO">Clicking link 'css=ul[region='navigation_collapsible_top'] a'.</msg>
+<status status="PASS" starttime="20210527 17:03:52.732" endtime="20210527 17:03:55.270"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_ID_Field}</arg>
+<arg>testt</arg>
+</arguments>
+<msg timestamp="20210527 17:03:55.272" level="INFO">Typing text 'testt' into text field 'id=edit-name'.</msg>
+<status status="PASS" starttime="20210527 17:03:55.271" endtime="20210527 17:03:55.326"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_Password_Field}</arg>
+<arg>testt</arg>
+</arguments>
+<msg timestamp="20210527 17:03:55.326" level="INFO">Typing text 'testt' into text field 'id=edit-pass'.</msg>
+<status status="PASS" starttime="20210527 17:03:55.326" endtime="20210527 17:03:55.387"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>60s</arg>
+</arguments>
+<msg timestamp="20210527 17:04:55.402" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20210527 17:03:55.388" endtime="20210527 17:04:55.403"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_Submit_BTN}</arg>
+</arguments>
+<msg timestamp="20210527 17:04:55.405" level="INFO">Clicking button 'id=edit-submit'.</msg>
+<status status="PASS" starttime="20210527 17:04:55.403" endtime="20210527 17:04:57.937"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>عرض</arg>
+</arguments>
+<msg timestamp="20210527 17:04:57.951" level="INFO">Current page contains text 'عرض'.</msg>
+<status status="PASS" starttime="20210527 17:04:57.937" endtime="20210527 17:04:57.951"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20210527 17:05:17.955" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20210527 17:04:57.951" endtime="20210527 17:05:17.956"></status>
+</kw>
+<status status="PASS" starttime="20210527 17:03:48.329" endtime="20210527 17:05:17.957"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Navigate_To_Complaint">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Services_Main_over DDL}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:17.961" level="INFO">Simulating Mouse Over on element 'id=main-menu-link-contentc3200ba2-6248-4662-91c3-ca30fb19fe1d'.</msg>
+<status status="PASS" starttime="20210527 17:05:17.959" endtime="20210527 17:05:18.641"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210527 17:05:19.656" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210527 17:05:18.641" endtime="20210527 17:05:19.656"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Services_Complaint_DDL}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:19.657" level="INFO">Simulating Mouse Over on element 'xpath=//a[@class='sf-depth-2 menuparent'][contains(text(),'تقديم شكوى')]'.</msg>
+<status status="PASS" starttime="20210527 17:05:19.657" endtime="20210527 17:05:19.940"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${Services_WaqfComplaint_DDL}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:19.941" level="INFO">Clicking link 'css=li[id='main-menu-link-content5a853347-3e97-4c60-82ac-99e5e82644c2'] a[class='sf-depth-3']'.</msg>
+<status status="PASS" starttime="20210527 17:05:19.940" endtime="20210527 17:05:21.271"></status>
+</kw>
+<status status="PASS" starttime="20210527 17:05:17.957" endtime="20210527 17:05:21.272" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Submit_Waqf_Complaint">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_ComplaintOwner_DDL}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.274" level="INFO">Clicking element 'id=edit-reporter-type'.</msg>
+<status status="PASS" starttime="20210527 17:05:21.273" endtime="20210527 17:05:21.329"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${WaqfComplaint_ComplaintOwner_DDL}</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.329" level="INFO">Selecting options from selection list 'id=edit-reporter-type' by index 2.</msg>
+<status status="PASS" starttime="20210527 17:05:21.329" endtime="20210527 17:05:21.397"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_ComplaintAbout_DDL}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.398" level="INFO">Clicking element 'id=edit-complaint-about'.</msg>
+<status status="PASS" starttime="20210527 17:05:21.397" endtime="20210527 17:05:21.476"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${WaqfComplaint_ComplaintAbout_DDL}</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.477" level="INFO">Selecting options from selection list 'id=edit-complaint-about' by index 2.</msg>
+<status status="PASS" starttime="20210527 17:05:21.476" endtime="20210527 17:05:21.546"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_FirstRB_RB}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.547" level="INFO">Clicking element 'id=edit-is-under-awqaf-authority-yes'.</msg>
+<status status="PASS" starttime="20210527 17:05:21.546" endtime="20210527 17:05:21.597"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_Address_Text}</arg>
+<arg>جدة</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.598" level="INFO">Typing text 'جدة' into text field 'id=edit-address'.</msg>
+<status status="PASS" starttime="20210527 17:05:21.598" endtime="20210527 17:05:21.664"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_WaqfType_DDL}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.664" level="INFO">Clicking element 'id=edit-waqf-type-select'.</msg>
+<status status="PASS" starttime="20210527 17:05:21.664" endtime="20210527 17:05:21.719"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${WaqfComplaint_WaqfType_DDL}</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.720" level="INFO">Selecting options from selection list 'id=edit-waqf-type-select' by index 2.</msg>
+<status status="PASS" starttime="20210527 17:05:21.719" endtime="20210527 17:05:21.791"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_WaqfStatus_DDL}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.792" level="INFO">Clicking element 'id=edit-waqf-status-select'.</msg>
+<status status="PASS" starttime="20210527 17:05:21.792" endtime="20210527 17:05:21.844"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${WaqfComplaint_WaqfStatus_DDL}</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.845" level="INFO">Selecting options from selection list 'id=edit-waqf-status-select' by index 2.</msg>
+<status status="PASS" starttime="20210527 17:05:21.845" endtime="20210527 17:05:21.908"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_Explain_Text}</arg>
+<arg>تست</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.909" level="INFO">Typing text 'تست' into text field 'id=edit-explanation'.</msg>
+<status status="PASS" starttime="20210527 17:05:21.909" endtime="20210527 17:05:21.976"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_Required_Text}</arg>
+<arg>المطلوب</arg>
+</arguments>
+<msg timestamp="20210527 17:05:21.977" level="INFO">Typing text 'المطلوب' into text field 'id=edit-requested'.</msg>
+<status status="PASS" starttime="20210527 17:05:21.976" endtime="20210527 17:05:22.044"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_SecondRB_RB}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:22.045" level="INFO">Clicking element 'id=edit-complaint-is-decided-no'.</msg>
+<status status="PASS" starttime="20210527 17:05:22.044" endtime="20210527 17:05:22.087"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_ThirdRB_RB}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:22.088" level="INFO">Clicking element 'id=edit-has-a-legal-ruling-been-issued-no'.</msg>
+<status status="PASS" starttime="20210527 17:05:22.088" endtime="20210527 17:05:22.128"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_Accept_CheckBox}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:22.128" level="INFO">Clicking element 'id=edit-agreement'.</msg>
+<status status="PASS" starttime="20210527 17:05:22.128" endtime="20210527 17:05:22.168"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${WaqfComplaint_Submit_BTN}</arg>
+</arguments>
+<msg timestamp="20210527 17:05:22.169" level="INFO">Clicking button 'id=edit-submit'.</msg>
+<status status="PASS" starttime="20210527 17:05:22.168" endtime="20210527 17:05:32.844"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210527 17:05:34.852" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210527 17:05:32.844" endtime="20210527 17:05:34.852"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>شكرا لك</arg>
+</arguments>
+<msg timestamp="20210527 17:05:34.872" level="INFO">Current page contains text 'شكرا لك'.</msg>
+<status status="PASS" starttime="20210527 17:05:34.853" endtime="20210527 17:05:34.872"></status>
+</kw>
+<status status="PASS" starttime="20210527 17:05:21.272" endtime="20210527 17:05:34.872" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210527 17:03:48.085" endtime="20210527 17:05:34.873"></status>
+</suite>
+<status status="PASS" starttime="20210527 17:03:48.083" endtime="20210527 17:05:34.874"></status>
+</suite>
+<status status="PASS" starttime="20210527 17:03:48.064" endtime="20210527 17:05:34.875"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="New Awqaf">New Awqaf</stat>
+<stat pass="2" fail="0" id="s1-s1" name="TCs">New Awqaf.TCs</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="WaqfComplaint">New Awqaf.TCs.WaqfComplaint</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

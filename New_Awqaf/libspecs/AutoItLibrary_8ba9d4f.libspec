@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="AutoItLibrary" type="library" format="ROBOT" generated="20210527 11:11:37">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>*AutoItLibrary* is a Robot Framework keyword library wrapper for for the freeware *AutoIt* tool
+(http://www.autoitscript.com/autoit3/index.shtml) using AutoIt's *AutoItX.dll* COM object. The
+*AutoItLibrary* class provides a proxy for the AutoIt keywords callable on the AutoIt COM object and
+provides additional high-level keywords implemented as methods in this class.
+
+In the following documentation on each keyword, the keywords whose documentation is simply
+_method &lt;KeywordName&gt;_ (e.g. "_method ControlClick_") are the native AutoIt keywords.  The detailed
+documentation for these keywords is available in the AutoItX documentation file:
+*AutoItX.chm*.  This file is installed as part of the installation of *AutoItLibrary* as:
+
+    C:\RobotFramework\Extensions\AutoItLibrary\AutoItX.chm
+
+In order to discover the control identifiers in a given Windows GUI, AutoIt provides a standalone
+tool called the AutoIt Window Info Tool which is installed as part of the installation of
+*AutoItLibrary* as:
+
+    C:\RobotFramework\Extensions\AutoItLibrary\Au3Info.exe
+
+This tool is documented here: http://www.autoitscript.com/autoit3/docs/intro/au3spy.htm</doc>
+<init>
+<arguments>
+<arg>TimeOut=60</arg>
+<arg>CaptureScreenOnError=False</arg>
+</arguments>
+<doc>| OutputDir=&lt;path&gt;          | Output directory for captured screenshots. Should set to _${OUTPUTDIR}_ |
+| Timeout=&lt;seconds&gt;         | Default TimeOut value in seconds.                                       |
+|                           | This is used in other methods when their TimeOut parameter is not used. |
+| CaptureScreenOnError=True | Defaults to False.  Set to _${True}_ to capture the PC screen on any    |
+|                           | AutoItLibrary keyword failure.                                          |</doc>
+<tags>
+</tags>
+</init>
+<kw name="Auto It Set Option">
+<arguments>
+<arg>strOption=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nValue=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method AutoItSetOption</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Clip Get">
+<arguments>
+</arguments>
+<doc>method ClipGet</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Clip Put">
+<arguments>
+<arg>strClip=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ClipPut</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Click">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strButton=LEFT</arg>
+<arg>nNumClicks=1</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+</arguments>
+<doc>method ControlClick</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Command">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strExtra=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlCommand</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Disable">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlDisable</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Enable">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlEnable</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Focus">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlFocus</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Get Focus">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method ControlGetFocus</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Get Handle">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlGetHandle</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Get Pos Height">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlGetPosHeight</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Get Pos Width">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlGetPosWidth</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Get Pos X">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlGetPosX</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Get Pos Y">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlGetPosY</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Get Text">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlGetText</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Hide">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlHide</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control List View">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strExtra1=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strExtra2=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlListView</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Move">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nX=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nWidth=-1</arg>
+<arg>nHeight=-1</arg>
+</arguments>
+<doc>method ControlMove</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Send">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strSendText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nMode=0</arg>
+</arguments>
+<doc>method ControlSend</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Set Text">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControlText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlSetText</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Show">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlShow</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Control Tree View">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strExtra1=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strExtra2=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ControlTreeView</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Drive Map Add">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strShare=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nFlags=0</arg>
+<arg>strUser=</arg>
+<arg>strPwd=</arg>
+</arguments>
+<doc>method DriveMapAdd</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Drive Map Del">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method DriveMapDel</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Drive Map Get">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method DriveMapGet</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Active Window Image">
+<arguments>
+<arg>FilePath</arg>
+</arguments>
+<doc>Capture an image of the active window into the given _FilePath_.
+The given _FilePath_ must be relative to Robot Framework output directory,
+otherwise the embedded image will not be shown in the log file.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Auto It Version">
+<arguments>
+</arguments>
+<doc>Returns a string with the version of the AutoItX COM object.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Screen Image">
+<arguments>
+<arg>FilePath</arg>
+</arguments>
+<doc>Capture a full screen image into the given _FilePath_.
+The given _FilePath_ must be relative to Robot Framework output directory,
+otherwise the embedded image will not be shown in the log file.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Version">
+<arguments>
+</arguments>
+<doc>Returns a string with the version of the AutoItLibrary.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Init">
+<arguments>
+</arguments>
+<doc>method Init</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Is Admin">
+<arguments>
+</arguments>
+<doc>method IsAdmin</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Click">
+<arguments>
+<arg>strButton=LEFT</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+<arg>nClicks=1</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseClick</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Click Drag">
+<arguments>
+<arg>strButton=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nX1=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nY1=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nX2=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nY2=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseClickDrag</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Down">
+<arguments>
+<arg>strButton=LEFT</arg>
+</arguments>
+<doc>method MouseDown</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Get Cursor">
+<arguments>
+</arguments>
+<doc>method MouseGetCursor</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Get Pos X">
+<arguments>
+</arguments>
+<doc>method MouseGetPosX</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Get Pos Y">
+<arguments>
+</arguments>
+<doc>method MouseGetPosY</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Move">
+<arguments>
+<arg>nX=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseMove</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Up">
+<arguments>
+<arg>strButton=LEFT</arg>
+</arguments>
+<doc>method MouseUp</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Mouse Wheel">
+<arguments>
+<arg>strDirection=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nClicks=1</arg>
+</arguments>
+<doc>method MouseWheel</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Opt">
+<arguments>
+<arg>strOption=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nValue=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method Opt</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Pixel Checksum">
+<arguments>
+<arg>nLeft=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nTop=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nRight=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nBottom=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nStep=1</arg>
+</arguments>
+<doc>method PixelChecksum</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Pixel Get Color">
+<arguments>
+<arg>nX=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method PixelGetColor</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Pixel Search">
+<arguments>
+<arg>nLeft=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nTop=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nRight=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nBottom=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nCol=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nVar=0</arg>
+<arg>nStep=1</arg>
+</arguments>
+<doc>method PixelSearch</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Process Close">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ProcessClose</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Process Exists">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ProcessExists</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Process Set Priority">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nPriority=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method ProcessSetPriority</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Process Wait">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method ProcessWait</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Process Wait Close">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method ProcessWaitClose</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run">
+<arguments>
+<arg>FileName</arg>
+<arg>WorkingDir=</arg>
+<arg>Flag=</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's Run method.
+
+This is required in order to do error code translation into exceptions for Robot Framework.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run As">
+<arguments>
+<arg>strUser=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strDomain=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strPassword=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nLogonFlag=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strRun=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strDir=</arg>
+<arg>nShowFlag=13</arg>
+</arguments>
+<doc>method RunAs</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run As Wait">
+<arguments>
+<arg>strUser=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strDomain=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strPassword=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nLogonFlag=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strRun=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strDir=</arg>
+<arg>nShowFlag=13</arg>
+</arguments>
+<doc>method RunAsWait</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run Wait">
+<arguments>
+<arg>strRun=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strDir=</arg>
+<arg>nShowFlag=13</arg>
+</arguments>
+<doc>method RunWait</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Send">
+<arguments>
+<arg>strSendText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nMode=0</arg>
+</arguments>
+<doc>method Send</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Shutdown">
+<arguments>
+<arg>nFlags=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method Shutdown</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Statusbar Get Text">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+<arg>nPart=1</arg>
+</arguments>
+<doc>method StatusbarGetText</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Tool Tip">
+<arguments>
+<arg>strTip=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+</arguments>
+<doc>method ToolTip</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Wait For Active Window">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Wait up to _TimeOut_ seconds for the window with the given _WindowTitle_ and optional
+_WindowText_ to appear. Force this to be the active window after it appears.  Optionally do a
+full screen capture on failure.
+
+Parameters:
+| WindowTitle=&lt;string&gt;  | Title of the application window expected to appear      |
+| [WindowText=&lt;string&gt;] | Optional text on the window expected to appear          |
+| [TimeOut=&lt;seconds&gt;]   | Optional overide to the default timeout set in __init__ |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Activate">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinActivate</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Active">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinActive</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Close">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinClose</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Exists">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinExists</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Caret Pos X">
+<arguments>
+</arguments>
+<doc>method WinGetCaretPosX</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Caret Pos Y">
+<arguments>
+</arguments>
+<doc>method WinGetCaretPosY</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Class List">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClassList</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Client Size Height">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClientSizeHeight</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Client Size Width">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClientSizeWidth</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Handle">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetHandle</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Pos Height">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosHeight</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Pos Width">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosWidth</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Pos X">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosX</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Pos Y">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosY</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Process">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetProcess</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get State">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetState</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Text">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetText</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Get Title">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetTitle</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Kill">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinKill</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win List">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinList</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Menu Select Item">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strItem1=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strItem2=</arg>
+<arg>strItem3=</arg>
+<arg>strItem4=</arg>
+<arg>strItem5=</arg>
+<arg>strItem6=</arg>
+<arg>strItem7=</arg>
+<arg>strItem8=</arg>
+</arguments>
+<doc>method WinMenuSelectItem</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Minimize All">
+<arguments>
+</arguments>
+<doc>method WinMinimizeAll</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Minimize All Undo">
+<arguments>
+</arguments>
+<doc>method WinMinimizeAllUndo</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Move">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nX=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nWidth=-1</arg>
+<arg>nHeight=-1</arg>
+</arguments>
+<doc>method WinMove</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Set On Top">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nFlag=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method WinSetOnTop</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Set State">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nFlags=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method WinSetState</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Set Title">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strNewTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method WinSetTitle</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Set Trans">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>nTrans=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+</arguments>
+<doc>method WinSetTrans</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Wait">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWait method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWait_&lt;n&gt;.png.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Wait Active">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWaitActive method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWaitActive_&lt;n&gt;.png.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Wait Close">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWaitClose method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWaitClose_&lt;n&gt;.png.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Wait Not Active">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x000001A8110439F0&gt;</arg>
+<arg>strText=</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method WinWaitNotActive</doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>
